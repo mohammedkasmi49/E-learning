@@ -16,7 +16,7 @@ public class AnnonceController {
     @Autowired
     private AnnonceService annonceService;
 
-    // Create a new Annonce
+    
     @PostMapping("add")
     public ResponseEntity<Annonce> createAnnonce(@RequestBody Annonce annonce) {
         Annonce createdAnnonce = annonceService.createAnnonce(annonce);
